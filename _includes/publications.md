@@ -1,4 +1,4 @@
-Publications
+## Publications
 
 Selected Journal Papers
 <div class="publications">
