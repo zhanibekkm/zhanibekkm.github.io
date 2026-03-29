@@ -1,3 +1,17 @@
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Offset to account for the top navigation bar if you have one */
+  h2 {
+    scroll-margin-top: 70px;
+  }
+  .nav-tabs a:hover {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+</style>
+
 <div class="nav-tabs" style="margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 10px; display: flex; gap: 15px; flex-wrap: wrap;">
   <a href="#about" class="btn btn-sm btn-outline-primary" style="text-decoration: none; font-weight: 500;">About</a>
   <a href="#interests" class="btn btn-sm btn-outline-primary" style="text-decoration: none; font-weight: 500;">Interests</a>
