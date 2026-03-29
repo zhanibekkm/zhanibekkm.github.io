@@ -1,5 +1,3 @@
-## Publications
-
 <h2 id="publications" style="margin-bottom: 20px;">Publications</h2>
 
 <h3 style="font-size: 1.2rem; border-bottom: 1px solid #eee; padding-bottom: 5px;">Journal Papers</h3>
