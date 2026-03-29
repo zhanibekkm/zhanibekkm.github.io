@@ -1,6 +1,6 @@
 <h2 id="publications" style="margin-bottom: 20px;">Publications</h2>
 
-<h3 style="font-size: 1.2rem; border-bottom: 1px solid #eee; padding-bottom: 5px;">Journal Papers</h3>
+<h4 style="margin:0 10px 0;">Journal Papers:</h4>
 <div class="publications">
 <ol class="bibliography" style="list-style: none; padding-left: 0;">
 {% for link in site.data.publications.journals %}
@@ -27,7 +27,7 @@
 </ol>
 </div>
 
-<h3 style="font-size: 1.2rem; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 40px;">Conference Papers</h3>
+<h4 style="margin:0 10px 0;">Conference Papers:</h4>
 <div class="publications">
 <ol class="bibliography" style="list-style: none; padding-left: 0;">
 {% for link in site.data.publications.conferences %}
