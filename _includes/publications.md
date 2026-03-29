@@ -1,3 +1,5 @@
+Publications
+
 Selected Journal Papers
 <div class="publications">
 <ol class="bibliography">
