@@ -5,10 +5,11 @@ affiliation: National Laboratory Astana, Nazarbayev University
 email: zhanibek.kozhirbayev (at) nu.edu.kz
 
 # Search Engine Optimization (SEO)
-# The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+# IMPORTANT: Update these so Google finds YOU, not the theme creator.
+keywords: "Zhanibek Kozhirbayev, NLP Researcher, Kazakh Speech Processing, Kazakh TTS, Machine Learning, Nazarbayev University"
+description: "Personal homepage of Zhanibek Kozhirbayev, a Leading Researcher specializing in Speech Processing, Multilingual NLP, and AI Infrastructure."
+# Change this to your actual github.io URL
+canonical: https://zhanibekkm.github.io/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
@@ -38,7 +39,7 @@ font: "Serif" # or "Sans Serif"
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
-google_analytics: UA-111540567-4
+google_analytics: ""
 
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
