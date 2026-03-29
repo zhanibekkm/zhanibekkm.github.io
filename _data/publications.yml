@@ -16,4 +16,4 @@ conferences:
     conference_short: "LoResMT"
     conference: "EACL Workshop (LoResMT 2026), Rabat, Morocco"
     pdf: "https://www.loresmt.org/program"
-    image: ./assets/img/conference_teaser.png
+    #image: ./assets/img/conference_teaser.png
