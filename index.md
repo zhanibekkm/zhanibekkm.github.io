@@ -15,10 +15,9 @@ I am a Postdoctoral-level researcher specializing in Speech Processing and NLP f
 
 ## News
 
-- **[Jan. 2026]** 🏆 Conducted the Turkic Languages Translation Challenge at LoResMT 2026 (EACL 2026) in Rabat, Morocco.
+- **[Jan. 2026]** 🏆 href="https://sites.google.com/view/loresmt/" Conducted the Turkic Languages Translation Challenge at LoResMT 2026 (EACL 2026) in Rabat, Morocco.
 - **[Mar. 2026]** 🎤 Presented Session 1: Findings of Turkic Low Resource Machine Translation Challenge at LoResMT 2026 (EACL 2026).
-- **[Mar. 2026]** Our paper "Evaluating Large Language Models for Text-to-Gloss Translation in
-Kazakh-Russian Sign Language: A Pilot Study" is accepted to LREC 2026.
+- **[Mar. 2026]** Our paper "Evaluating Large Language Models for Text-to-Gloss Translation in Kazakh-Russian Sign Language: A Pilot Study" is accepted to LREC 2026.
 
 {% include_relative _includes/projects.md %}
 
