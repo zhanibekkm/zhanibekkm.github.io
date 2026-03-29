@@ -1,4 +1,4 @@
-main:
+journals:
 
   - title: A performance comparison of container-based technologies for the cloud
     authors: Zhanibek Kozhirbayev*, Richard O Sinnott (*Corresponding author)
@@ -10,13 +10,10 @@ main:
     #image: ./assets/img/teaser_example_2.png
     notes: Journal paper
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    #image: ./assets/img/teaser_example.png
+conferences:
+  - title: "Findings of the Turkic Low Resource Machine Translation Challenge"
+    authors: "<strong>Zhanibek Kozhirbayev</strong>, Valentin Malykh"
+    conference_short: "LoResMT"
+    conference: "EACL Workshop (LoResMT 2026), Rabat, Morocco"
+    pdf: "https://www.loresmt.org/program"
+    image: ./assets/img/conference_teaser.png
