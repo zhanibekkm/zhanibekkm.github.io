@@ -20,7 +20,10 @@ I am a Postdoctoral-level researcher specializing in Speech Processing and NLP f
 - **[Mar. 2026]** Our paper "Evaluating Large Language Models for Text-to-Gloss Translation in
 Kazakh-Russian Sign Language: A Pilot Study" is accepted to LREC 2026.
 
+{% include_relative _includes/projects.md %}
 
 {% include_relative _includes/publications.md %}
 
 {% include_relative _includes/services.md %}
+
+
