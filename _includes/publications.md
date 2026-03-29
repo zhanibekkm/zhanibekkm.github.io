@@ -1,6 +1,5 @@
 ## Publications
-
-Selected Journal Papers
+<h4 style="margin:0 10px 0;">Selected Journal Papers</h4>
 <div class="publications">
 <ol class="bibliography">
 {% for link in site.data.publications.journals %}
@@ -29,7 +28,7 @@ Selected Journal Papers
 </ol>
 </div>
 
-Conference Papers
+<h4 style="margin:0 10px 0;">Conference Papers</h4>
 <div class="publications">
 <ol class="bibliography">
 {% for link in site.data.publications.conferences %}
