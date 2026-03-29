@@ -1,57 +1,55 @@
 ## Publications
-<h4 style="margin:0 10px 0;">Selected Journal Papers</h4>
+
+<h2 id="publications" style="margin-bottom: 20px;">Publications</h2>
+
+<h3 style="font-size: 1.2rem; border-bottom: 1px solid #eee; padding-bottom: 5px;">Journal Papers</h3>
 <div class="publications">
-<ol class="bibliography">
+<ol class="bibliography" style="list-style: none; padding-left: 0;">
 {% for link in site.data.publications.journals %}
-<li>
-<div class="pub-row">
-{% if link.image %}
-<img src="{{ link.image }}" class="teaser img-fluid" style="width:100px; margin-right:10px;">
-{% if link.conference_short %} <abbr class="badge">{{ link.conference_short }}</abbr> {% endif %}
-{% endif %}
-
-<div class="title"><strong>{{ link.title }}</strong></div>
-<div class="author">{{ link.authors }}</div>
-<div class="periodical"><em>{{ link.conference }}</em></div>
-
-<div class="links">
-  {% if link.pdf %} <a href="{{ link.pdf }}" class="btn btn-sm">PDF</a> {% endif %} 
-  {% if link.code %} <a href="{{ link.code }}" class="btn btn-sm">Code</a> {% endif %} 
-  {% if link.bibtex %} <a href="{{ link.bibtex }}" class="btn btn-sm">BibTex</a> {% endif %}
-  {% if link.notes %} <i style="color:#e74d3c">{{ link.notes }}</i> {% endif %}
-</div>
-</div>
-</li>
-
-
+  <li style="margin-bottom: 25px;">
+    <div class="row" style="display: flex;">
+      <div class="col-sm-2" style="flex: 0 0 15%; padding-right: 10px;">
+        {% if link.image %}<img src="{{ link.image }}" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">{% endif %}
+      </div>
+      <div class="col-sm-10" style="flex: 0 0 85%;">
+        <span class="author">{{ link.authors }}</span> 
+        <span class="year">({{ link.year }}).</span> 
+        <span class="title" style="font-weight: bold;">{{ link.title }}.</span> 
+        <span class="periodical" style="font-style: italic;">{{ link.conference }}.</span>
+        {% if link.doi %}<span class="doi">https://doi.org/{{ link.doi }}</span>{% endif %}
+        
+        <div class="links" style="margin-top: 8px;">
+          {% if link.pdf %}<a href="{{ link.pdf }}" class="btn btn-sm" style="border: 1px solid #ddd; padding: 2px 8px; font-size: 0.8rem;">PDF</a>{% endif %}
+          {% if link.code %}<a href="{{ link.code }}" class="btn btn-sm" style="border: 1px solid #ddd; padding: 2px 8px; font-size: 0.8rem;">Code</a>{% endif %}
+        </div>
+      </div>
+    </div>
+  </li>
 {% endfor %}
 </ol>
 </div>
 
-<h4 style="margin:0 10px 0;">Conference Papers</h4>
+<h3 style="font-size: 1.2rem; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 40px;">Conference Papers</h3>
 <div class="publications">
-<ol class="bibliography">
+<ol class="bibliography" style="list-style: none; padding-left: 0;">
 {% for link in site.data.publications.conferences %}
-<li>
-<div class="pub-row">
-{% if link.image %}
-<img src="{{ link.image }}" class="teaser img-fluid" style="width:100px; margin-right:10px;">
-{% if link.conference_short %} <abbr class="badge">{{ link.conference_short }}</abbr> {% endif %}
-{% endif %}
-
-<div class="title"><strong>{{ link.title }}</strong></div>
-<div class="author">{{ link.authors }}</div>
-<div class="periodical"><em>{{ link.conference }}</em></div>
-
-<div class="links">
-  {% if link.pdf %} <a href="{{ link.pdf }}" class="btn btn-sm">PDF</a> {% endif %} 
-  {% if link.code %} <a href="{{ link.code }}" class="btn btn-sm">Code</a> {% endif %}
-  {% if link.bibtex %} <a href="{{ link.bibtex }}" class="btn btn-sm">BibTex</a> {% endif %}
-</div>
-</div>
-</li>
-
-
+  <li style="margin-bottom: 25px;">
+    <div class="row" style="display: flex;">
+      <div class="col-sm-2" style="flex: 0 0 15%; padding-right: 10px;">
+        {% if link.image %}<img src="{{ link.image }}" style="width: 100%; border-radius: 4px;">{% endif %}
+      </div>
+      <div class="col-sm-10" style="flex: 0 0 85%;">
+        <span class="author">{{ link.authors }}</span> 
+        <span class="year">({{ link.year }}).</span> 
+        <span class="title" style="font-weight: bold;">{{ link.title }}.</span> 
+        In <span class="periodical" style="font-style: italic;">{{ link.conference }}</span>.
+        
+        <div class="links" style="margin-top: 8px;">
+          {% if link.pdf %}<a href="{{ link.pdf }}" class="btn btn-sm" style="border: 1px solid #ddd; padding: 2px 8px; font-size: 0.8rem;">PDF</a>{% endif %}
+        </div>
+      </div>
+    </div>
+  </li>
 {% endfor %}
 </ol>
 </div>
