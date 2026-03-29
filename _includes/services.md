@@ -11,5 +11,4 @@
 
 <ul style="margin:0 0 20px;">
   <li><a href="https://www.mdpi.com/journal/electronics"><autocolor>Electronics (MDPI)</autocolor></a></li>
-  </li>
 </ul>
