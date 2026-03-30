@@ -38,35 +38,61 @@
       html {
         scroll-behavior: smooth;
       }
+
+      /* Navigation Container */
       .sticky-nav {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
-        background-color: rgba(255, 255, 255, 0.98);
-        padding: 15px 0;
-        border-bottom: 1px solid #eee;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(5px); /* Adds a modern blur effect */
+        padding: 12px 0;
         z-index: 1000;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
+        border-bottom: 1px solid #f0f0f0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
       }
+
+      /* Individual Tab Styling */
       .nav-tab {
-        padding: 6px 14px;
-        margin-right: 8px;
-        border: 1px solid #ddd;
-        border-radius: 20px;
+        padding: 6px 16px;
+        border: 1px solid #e0e0e0;
+        border-radius: 30px; /* Pill shape */
         text-decoration: none !important;
-        color: #555 !important;
-        font-size: 0.85rem;
+        color: #666 !important;
+        font-size: 0.82rem;
         font-weight: 500;
-        transition: all 0.2s ease;
+        background-color: #fff;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.03);
       }
+
+      /* Hover & Active States */
       .nav-tab:hover {
-        background-color: #f8f9fa;
-        border-color: #bbb;
-        color: #000 !important;
+        background-color: #4facfe; /* Academic Blue */
+        border-color: #4facfe;
+        color: #fff !important;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       }
-      /* Offset jump position so headers aren't hidden under sticky nav */
+
+      /* Adjust section jump offset */
       h2[id] {
-        scroll-margin-top: 70px;
+        scroll-margin-top: 80px;
+      }
+
+      /* Small screens adjustment */
+      @media (max-width: 600px) {
+        .sticky-nav {
+          padding: 10px 0;
+          gap: 5px;
+        }
+        .nav-tab {
+          padding: 4px 10px;
+          font-size: 0.75rem;
+        }
       }
     </style>
 
@@ -74,7 +100,6 @@
   <body>
     <div class="wrapper">
       <header>
-        
         {% if site.avatar %}
         <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
         {% endif %}
@@ -93,66 +118,59 @@
         <email>{{ site.email }}</email>
         {% endif %}
 
-        <br>
-        <br>
+        <br><br>
         <div class="social-icons">
-        {% if site.google_scholar %}
-        <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
-          <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
-        </a>  
-        {% endif %}
-
-        {% if site.cv_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.cv_link }}">
-          <i class="ai ai-cv" style="font-size:1.3rem;"></i>
-        </a>
-        {% endif %}
-
-        {% if site.github_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.github_link }}">
-          <i class="fab fa-github"></i>
-        </a>
-        {% endif %}
-
-        {% if site.linkedin %}
-        <a style="margin: 0 5px 0 0" href="{{ site.linkedin }}">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        {% endif %}
-
-        {% if site.twitter %}
-        <a style="margin: 0 0 0 0" href="{{ site.twitter }}">
-          <i class="fab fa-x-twitter"></i>
-        </a>
-        {% endif %}
+          {% if site.google_scholar %}
+          <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
+            <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
+          </a>  
+          {% endif %}
+          {% if site.cv_link %}
+          <a style="margin: 0 5px 0 0" href="{{ site.cv_link }}">
+            <i class="ai ai-cv" style="font-size:1.3rem;"></i>
+          </a>
+          {% endif %}
+          {% if site.github_link %}
+          <a style="margin: 0 5px 0 0" href="{{ site.github_link }}">
+            <i class="fab fa-github"></i>
+          </a>
+          {% endif %}
+          {% if site.linkedin %}
+          <a style="margin: 0 5px 0 0" href="{{ site.linkedin }}">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          {% endif %}
+          {% if site.twitter %}
+          <a style="margin: 0 0 0 0" href="{{ site.twitter }}">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          {% endif %}
         </div>
         <br>
-
       </header>
+
       <section>
+        <nav class="sticky-nav">
+          <a href="#about" class="nav-tab">About</a>
+          <a href="#interests" class="nav-tab">Interests</a>
+          <a href="#news" class="nav-tab">News</a>
+          <a href="#projects" class="nav-tab">Projects</a>
+          <a href="#publications" class="nav-tab">Publications</a>
+          <a href="#services" class="nav-tab">Services</a>
+        </nav>
 
-      <nav class="sticky-nav">
-        <a href="#about" class="nav-tab">About me</a>
-        <a href="#interests" class="nav-tab">Research Interests</a>
-        <a href="#news" class="nav-tab">News</a>
-        <a href="#projects" class="nav-tab">Projects</a>
-        <a href="#publications" class="nav-tab">Publications</a>
-        <a href="#services" class="nav-tab">Services</a>
-      </nav>
+        {{ content }}
 
-      {{ content }}
+        <br>
 
-      <br>
-
-      {% if site.enable_footnote %}
-      <p><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</small></p>
-      {% endif %}
-
+        {% if site.enable_footnote %}
+        <p><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</small></p>
+        {% endif %}
       </section>
-      <footer>
-        
-      </footer>
+
+      <footer></footer>
     </div>
+
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>
