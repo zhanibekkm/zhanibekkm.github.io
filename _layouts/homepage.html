@@ -34,6 +34,42 @@
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
     {% endif %}
 
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .sticky-nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.98);
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+        z-index: 1000;
+        margin-bottom: 20px;
+      }
+      .nav-tab {
+        padding: 6px 14px;
+        margin-right: 8px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        text-decoration: none !important;
+        color: #555 !important;
+        font-size: 0.85rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+      }
+      .nav-tab:hover {
+        background-color: #f8f9fa;
+        border-color: #bbb;
+        color: #000 !important;
+      }
+      /* Offset jump position so headers aren't hidden under sticky nav */
+      h2[id] {
+        scroll-margin-top: 70px;
+      }
+    </style>
+
   </head>
   <body>
     <div class="wrapper">
@@ -94,6 +130,12 @@
 
       </header>
       <section>
+
+      <nav class="sticky-nav">
+        <a href="#about" class="nav-tab">About</a>
+        <a href="#publications" class="nav-tab">Publications</a>
+        <a href="#services" class="nav-tab">Services</a>
+      </nav>
 
       {{ content }}
 
