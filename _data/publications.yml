@@ -1,18 +1,18 @@
 journals:
 
-  - title: A performance comparison of container-based technologies for the cloud
-    authors: Zhanibek Kozhirbayev*, Richard O Sinnott (*Corresponding author)
-    journal_short: FGCS
-    journal: Future Generation Computer Systems</strong>, 2017.
+  - title: "A performance comparison of container-based technologies for the cloud"
+    authors: "Zhanibek Kozhirbayev, Richard O Sinnott"
+    journal_short: "FGCS"
+    journal: "Future Generation Computer Systems"
     #pdf: https://arxiv.org/pdf/2306.00988.pdf
     #code: https://github.com/MrGiovanni/ContinualLearning
     #bibtex: https://bib.yliu.me/MICCAI23.txt
     #image: ./assets/img/teaser_example_2.png
-    notes: Journal paper
+    notes: "Journal paper"
 
 conferences:
   - title: "Findings of the Turkic Low Resource Machine Translation Challenge"
-    authors: "<strong>Zhanibek Kozhirbayev</strong>, Valentin Malykh"
+    authors: "Zhanibek Kozhirbayev, Valentin Malykh"
     conference_short: "LoResMT"
     conference: "EACL Workshop (LoResMT 2026), Rabat, Morocco"
     pdf: "https://www.loresmt.org/program"
