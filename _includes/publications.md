@@ -7,7 +7,7 @@
     <li style="margin-bottom: 25px;">
       <div class="row" style="display: flex;">
         <div class="col-sm-10" style="flex: 0 0 85%;">
-          <span class="authors">{{ entry.author }}.</span> 
+          <span class="authors">{{ entry.authors }}.</span> 
           <span class="year">({{ entry.year }}).</span> 
           <span class="title" style="font-weight: bold;">{{ entry.title }}.</span> 
           <span class="periodical" style="font-style: italic;">{{ entry.journal }}</span>{% if entry.volume %}, <span>{{ entry.volume }}</span>{% if entry.number %}({{ entry.number }}){% endif %}{% endif %}{% if entry.pages %}, {{ entry.pages }}{% endif %}.
@@ -34,7 +34,7 @@
     <li style="margin-bottom: 25px;">
       <div class="row" style="display: flex;">
         <div class="col-sm-10" style="flex: 0 0 85%;">
-          <span class="authors">{{ entry.author }}.</span> 
+          <span class="authors">{{ entry.authors }}.</span> 
           <span class="year">({{ entry.year }}).</span> 
           <span class="title" style="font-weight: bold;">{{ entry.title }}.</span> 
           In <span class="periodical" style="font-style: italic;">{{ entry.booktitle }}</span>{% if entry.pages %}, (pp. {{ entry.pages }}){% endif %}. {{ entry.address }}.      
