@@ -1,5 +1,3 @@
-<h2 id="publications" style="margin-top: 50px; margin-bottom: 20px;">Publications</h2>
-
 <h4 style="margin: 0 10px 0;">Journal Papers:</h4>
 <div class="publications">
   <ol class="bibliography" style="list-style: none; padding-left: 0; margin-top: 0;">
