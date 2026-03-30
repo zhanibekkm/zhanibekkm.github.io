@@ -19,6 +19,9 @@ I am a Postdoctoral-level researcher specializing in Speech Processing and NLP f
 <h2 id="projects">Projects</h2>
 {% include_relative _includes/projects.md %}
 
+<h2 id="teaching">Teaching</h2>
+{% include_relative _includes/teaching.md %}
+
 <h2 id="publications">Publications</h2>
 {% include_relative _includes/publications.md %}
 
