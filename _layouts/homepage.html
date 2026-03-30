@@ -76,6 +76,18 @@
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       }
 
+      /* --- Section Spacing Update --- */
+      h2[id] {
+        margin-top: 70px !important;   /* Gap above section titles */
+        margin-bottom: 20px !important;
+        scroll-margin-top: 90px;      /* Prevents sticky nav from covering title */
+      }
+
+      /* Remove top gap for the first section */
+      h2#about {
+        margin-top: 10px !important;
+      }
+
       /* DARK MODE OVERRIDES */
       @media (prefers-color-scheme: dark) {
         .sticky-nav {
@@ -93,11 +105,6 @@
           color: #fff !important;
           box-shadow: 0 4px 12px rgba(0,0,0,0.4);
         }
-      }
-
-      /* Prevents headers from being cut off by the sticky bar */
-      h2[id] {
-        scroll-margin-top: 80px;
       }
 
       @media (max-width: 600px) {
@@ -132,7 +139,13 @@
         <div class="social-icons">
           {% if site.google_scholar %}<a href="{{ site.google_scholar }}"><i class="ai ai-google-scholar"></i></a>{% endif %}
           {% if site.github_link %}<a href="{{ site.github_link }}"><i class="fab fa-github"></i></a>{% endif %}
-          {% if site.huggingface %}<a style="margin: 0 5px 0 0; text-decoration: none;" href="{{ site.huggingface }}" target="_blank"> <span style="font-size: 1.2rem;">🤗</span></a>  {% endif %}
+          
+          {% if site.huggingface %}
+          <a style="margin: 0 5px 0 0; text-decoration: none;" href="{{ site.huggingface }}" target="_blank">
+            <span style="font-size: 1.1rem; filter: grayscale(0.2);">🤗</span>
+          </a>
+          {% endif %}
+          
           {% if site.linkedin %}<a href="{{ site.linkedin }}"><i class="fab fa-linkedin"></i></a>{% endif %}
           {% if site.cv_link %}<a href="{{ site.cv_link }}"><i class="ai ai-cv"></i></a>{% endif %}
         </div>
@@ -152,7 +165,7 @@
         {{ content }}
 
         {% if site.enable_footnote %}
-        <p style="margin-top: 50px;"><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank">Minimal Light</a>.</small></p>
+        <p style="margin-top: 60px;"><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank">Minimal Light</a>.</small></p>
         {% endif %}
       </section>
 
